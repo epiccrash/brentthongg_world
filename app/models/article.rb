@@ -1,6 +1,6 @@
 class Article < ApplicationRecord
 	# Relationships
-  	belongs_to :category
+  	has_one :category
 
   	# Validations
   	validates_presence_of :title

@@ -1,6 +1,6 @@
 class Category < ApplicationRecord
 	has_many :photos
-	has_one :article
+	belongs_to :article
 
 	scope :active, 			 -> { where('active = ?', true) }
   scope :alphabetical, -> { order('name') }
